@@ -1,6 +1,6 @@
 
 /****************
-***************** Configure App with Spring ****************************/
+***************** Configure IoC with Spring ****************************/
 
 1. Configure Spring Beans with xml tag <bean></bean>.
 2. Create 'Spring Container' generally known as 'Application Context'.
@@ -14,3 +14,8 @@
    Get context object.
    To get object use context.getBean(id_bean, Interface_name.class) on it.
 4. Close the context object.
+
+
+To see Inversion of Control (IoC) achived or not by configuration file.
+We just need to go to application context file and change class name to Different class which is implementing same interface.
+No need to do changes in source code.
