@@ -1,0 +1,16 @@
+
+/****************
+***************** Configure App with Spring ****************************/
+
+1. Configure Spring Beans with xml tag <bean></bean>.
+2. Create 'Spring Container' generally known as 'Application Context'.
+   Specialized Implementation:
+   a. ClassPathXmlApplicationContext
+   b. AnnotationConfigApplicationContext
+   c. GenericWebApplicationContext
+   others...
+   Here we need to pass application context file name to their objects.
+3. Retrieve Spring beans from Container.
+   Get context object.
+   To get object use context.getBean(id_bean, Interface_name.class) on it.
+4. Close the context object.
