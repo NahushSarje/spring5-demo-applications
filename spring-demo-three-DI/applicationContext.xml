@@ -7,7 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	
+	<!-- Read Properties file ipl.properties -->
+ 	<context:property-placeholder location="classpath:ipl.properties"/>
+ 	
     <!-- Define your beans here -->
     <bean id="myFortuneService"
  		class="com.luv2code.springDemo.HappyFortuneService">	 		
@@ -20,8 +22,14 @@
  		<property name="fortuneService" ref="myFortuneService"></property>
  		
  		<!-- Set up setter primitives -->
- 		<property name="emailAddress" value="codoingpractice@gmail.com"></property>
- 		<property name="team" value="Mumbai Indians"></property>
+ 		
+ 		<!-- Hardcoded values -->
+ 		<!-- <property name="emailAddress" value="codoingpractice@gmail.com"></property>
+ 		<property name="team" value="Mumbai Indians"></property> -->
+ 		
+ 		<!-- Read values from Properties files -->
+ 		<property name="emailAddress" value="${email}"></property>
+ 		<property name="team" value="${team}"></property>
  	</bean>
  	
     <bean id="myCoach"
