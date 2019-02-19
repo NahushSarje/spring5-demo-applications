@@ -18,6 +18,10 @@
  		
  		<!-- Set up setter DI -->
  		<property name="fortuneService" ref="myFortuneService"></property>
+ 		
+ 		<!-- Set up setter primitives -->
+ 		<property name="emailAddress" value="codoingpractice@gmail.com"></property>
+ 		<property name="team" value="Mumbai Indians"></property>
  	</bean>
  	
     <bean id="myCoach"
