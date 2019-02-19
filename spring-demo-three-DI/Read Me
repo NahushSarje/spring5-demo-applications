@@ -2,5 +2,5 @@
 /*********** Dependency Injuction(DI) **************/
 
 We genrally inject the readily available objects to our code.
-Here we worked on constructor DI, setter DI and primitive values injection.
+Here we worked on constructor DI, setter DI and primitive values injection(Hardcoded and read from properties file).
 
