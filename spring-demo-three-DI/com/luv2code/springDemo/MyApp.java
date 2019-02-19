@@ -11,7 +11,8 @@ public class MyApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//Retrieve bean from spring container
-		Coach theCoach = context.getBean("myCoach", Coach.class);
+		//Coach theCoach = context.getBean("myCoach", Coach.class);   // This enables constructor DI
+		Coach theCoach = context.getBean("myCricketCoach", Coach.class); // This enables setter DI
 		
 		//use object
 		System.out.println(theCoach.getDailyWorkout());
