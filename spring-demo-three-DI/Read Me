@@ -1,6 +1,6 @@
 
 /*********** Dependency Injuction(DI) **************/
 
-We genrally inject the readily available objects to out code.
-Here we are working on constructor DI.
+We genrally inject the readily available objects to our code.
+Here we worked on constructor DI, setter DI and primitive values injection.
 
