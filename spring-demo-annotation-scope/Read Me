@@ -1,0 +1,7 @@
+
+/**************************** Annotation scope ****************************/
+
+- Default scope - Singleton.
+- Protype scope - Create different obj when called.
+
+
