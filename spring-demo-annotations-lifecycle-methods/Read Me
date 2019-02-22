@@ -1,0 +1,6 @@
+
+/****************************** Annotations Lifecycle Methods ************************************/
+
+- Need to use @PostConstruct to init() and @PreDestroy to destroy()
+- In the scope of "prototype" destroy methode won't execute.
+
