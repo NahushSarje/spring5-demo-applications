@@ -1,0 +1,12 @@
+
+/******************Configure Spring without xml*****************/
+
+1. Create a class
+2. Add annotations on class
+    @Configuration
+    @ComponentScan("package to scan")
+3. Read Spring Config file
+		AnnotationConfigApplicationContext context = 
+				new AnnotationConfigApplicationContext(class_name.class);
+4. Get the bean from spring container.
+		Coach theCoach = context.getBean("class_name with first letter lowercase", (class).class);
