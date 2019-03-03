@@ -1,0 +1,10 @@
+
+/************************* Reading Beans from manually configured Beans ***************************/
+
+1. Create class with annotaion @Configuration
+2. Add bean methods with annotaion @Bean which return bean for that perticular class.
+3. Read Spring Config file
+		AnnotationConfigApplicationContext context = 
+				new AnnotationConfigApplicationContext(SportsConfig.class);
+4. Get the bean from spring container.
+		Coach theCoach = context.getBean("bean_id", Coach.class);
